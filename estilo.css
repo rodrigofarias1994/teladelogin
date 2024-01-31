@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body.bg_museu {
+    background-image: url(Assets/FPLYm0PTCcKxMLQoPbNP.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+   
+}
+.container img{
+    justify-content: center;
+    margin-left: 40px;
+}
+.container h2{
+    margin-top: -20px;
+}
+form {
+
+    width: 250px;
+    border: 1px solid white;
+    padding: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    
+
+}
+
+label {
+    margin-bottom: 100px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ input {
+
+        height: 40px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #c4c4c4;
+        padding-left: 10px;
+        transition-duration: 500ms;
+        outline-color: #c4c4c4;
+        width: 100%;
+        justify-content: center;
+    
+}
+
+button {
+
+    border: 0;
+    color:black;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    font-size: medium;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #cd4ad9;
+}
+
+#error-msg {
+    color: red;
+    margin-top: 10px;
+}

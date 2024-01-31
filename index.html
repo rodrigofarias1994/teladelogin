@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Tela de Login</title>
+</head>
+<body class="bg_museu">
+    <div class="container">
+        <img src="Assets/blob-2-d0146a3c0856d173aba6365940aefc40.png" alt="">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <label for="username">Email do usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="validateLogin()">Entrar</button>
+            <p id="error-msg"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function validateLogin() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var errorMsg = document.getElementById("error-msg");
+
+    
+    if (username === "rodrigofarias@gmail.com" && password === "1234") {
+       
+        errorMsg.style.color = "green";
+        errorMsg.textContent = "Login bem-sucedido!";
+    } else {
+       
+        errorMsg.style.color = "red";
+        errorMsg.textContent = "Credenciais inválidas. Tente novamente.";
+    }
+}
+
+    </script>
+</body>
+</html>
